@@ -1,5 +1,5 @@
 # 1、input读取原始文件并将其存储为一个字典
-with open('from.js', 'r', encoding='utf-8') as f:
+with open('from.txt', 'r', encoding='utf-8') as f:
     lines = f.readlines()
     origin_data = {}
     for line in lines:
@@ -42,7 +42,7 @@ sorted_tuples = sorted(origin_data.items(), key=lambda x: x[0])
 #     print(item[0], item[1])
 
 # 将所有键值对写入一个新文件中
-with open('to.js', 'w', encoding='utf-8') as f:
+with open('to.txt', 'w', encoding='utf-8') as f:
     for item in sorted_tuples:
         f.write(item[0] + ': ' + item[1] + '\n')
     # for key, value in sorted_tuples.items():

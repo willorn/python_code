@@ -1,5 +1,5 @@
-from_file = 'file_from.js'
-to_file = 'file_to.js'
+from_file = 'file_from.txt'
+to_file = 'file_to.txt'
 
 print("此程序用作国际化文件的排序，按照key排序")
 print("1、input读取原始文件并将其存储为一个字典")
